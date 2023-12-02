@@ -4,7 +4,7 @@ import document from "../assets/Image/document.png"
 export default function ProductCreateFrom() {
   return (
     <>
-      <div class="p-10 divide-y divide-gray-100">
+      <div className="p-10 divide-y divide-gray-100">
         <div class="flex justify-between h-24">
           <div>
             <h2 class="text-3xl font-bold text-gray-800 capitalize">Create product</h2>

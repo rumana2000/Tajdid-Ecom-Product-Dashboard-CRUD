@@ -12,62 +12,62 @@ import vector from "../assets/Image/Vector.png"
 export default function Sidebar() {
   return (
     <>
-    <div class="col-span-1 items-start">
-      <div class="h-full shadow overflow-hidden bg-white relative">
+    <div className="col-span-1 items-start">
+      <div className="h-full shadow overflow-hidden bg-white relative">
           <div className="flex justify-center items-center p-10 gap-1">
             <img src={shopLogo} alt="shopLogo" className="w-5 h-5" />
             <img src={shopName} alt="shopName" className="w-20h-20" />
           </div>
           <div className="">
-            <ul class="space-y-2 font-medium">
+            <ul className="space-y-2 font-medium">
               <li className="bg-sky-100 border-l-4 border-blue-600 ">
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900  dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900  dark:text-white">
                     <img src={Layers} alt="Layers" className="w-4 h-4" />
-                    <span class="ms-3 capitalize">product</span>
+                    <span className="ms-3 capitalize">product</span>
                   </a>
                 </div>
               </li>
               <li>
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
                     <img src={Analytics} alt="Analytics" className="w-4 h-4" />
-                    <span class="flex-1 ms-3 capitalize">analytic</span>
+                    <span className="flex-1 ms-3 capitalize">analytic</span>
                     <img src={arrowDown} alt="arrowDown" className="w-3 h-2" />
                   </a>
                 </div>
               </li>
               <li>
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
                     <img src={dollarSign} alt="dollarSign" className="w-4 h-4" />
-                    <span class="flex-1 ms-3 whitespace-nowrap capitalize">billing</span>
+                    <span className="flex-1 ms-3 whitespace-nowrap capitalize">billing</span>
                     <img src={arrowDown} alt="arrowDown" className="w-3 h-2" />
                   </a>
                 </div>
               </li>
               <li>
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
                     <img src={home} alt="home" className="w-4 h-4" />
-                    <span class="flex-1 ms-3 whitespace-nowrap capitalize">company</span>
+                    <span className="flex-1 ms-3 whitespace-nowrap capitalize">company</span>
                     <img src={arrowDown} alt="arrowDown" className="w-3 h-2" />
                   </a>
                 </div>
               </li>
               <li>
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
                     <img src={user} alt="user" className="w-4 h-4" />
-                    <span class="flex-1 ms-3 whitespace-nowrap capitalize">admin</span>
+                    <span className="flex-1 ms-3 whitespace-nowrap capitalize">admin</span>
                   </a>
                 </div>
               </li>
               <li>
                 <div className="px-6">
-                  <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
+                  <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
                     <img src={logOut} alt="logOut" className="w-4 h-4" />
-                    <span class="flex-1 ms-3 whitespace-nowrap capitalize">logout</span>
+                    <span className="flex-1 ms-3 whitespace-nowrap capitalize">logout</span>
                   </a>
                 </div>
               </li>

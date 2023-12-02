@@ -6,8 +6,8 @@ import arrowDown from "../assets/Image/arrowDown.png"
 export default function ProductHeader() {
   return (
     <>
-      <div class="flex justify-between h-24">
-        <h2 class="text-3xl font-bold text-gray-800 capitalize">products</h2>
+      <div className="flex justify-between h-24">
+        <h2 className="text-3xl font-bold text-gray-800 capitalize">products</h2>
         <div className="flex justify-between gap-4">
          <NavLink to="/create-product"> <button type="button" className="text-md capitalize w-[132px] h-10 bg-blue-700 rounded text-white">create new</button></NavLink>
           <div className="flex gap-2">
