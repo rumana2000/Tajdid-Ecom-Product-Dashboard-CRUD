@@ -12,6 +12,7 @@ export default {
       },
       padding: {
         '22px': '22px',
+        '18px': '18px',
       },
       width: {
         '32px': '32px',
@@ -22,6 +23,7 @@ export default {
         '60px':   '60px',
         '76px': '76px',
         '512px': '512px',
+        '400px': '400px',
       },
       height: {
         '32px': '32px',
@@ -46,7 +48,8 @@ export default {
       },
       colors: {
         "base" : "#FF9017",
-        "cardBase": "#606060"
+        "cardBase": "#606060",
+        "opacitybg": "#344054",
       }
 
     },
