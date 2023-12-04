@@ -4,7 +4,7 @@ import Pagination from "../component/Pagination"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import ShimmerEffect from "../component/ShimmerEffect"
-import DeleteConfirmPopup from "../component/DeleteConfirmPopUp"
+import DeleteConfirmPopup from "../component/DeleteConfirmPopup"
 import { toast } from "react-toastify"
 
 
