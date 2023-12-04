@@ -15,7 +15,9 @@
   p {
     @apply font-Lexend
   }
- 
+}
+.menu-active-link {
+  @apply bg-sky-100 border-l-4 border-blue-600
 }
 .menu-h-container {
   min-height: calc(80vh - 244px);

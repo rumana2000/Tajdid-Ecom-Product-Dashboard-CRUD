@@ -42,7 +42,7 @@ export default function ProductCreateFrom() {
               <h3 className="text-md text-gray-400 capitalize">Upload your product photo and details here.</h3>
             </div>
             <div className="flex justify-between gap-4">
-              <NavLink to="/"><button type="button" className="text-md capitalize w-[76px] h-[40px] bg-white shadow rounded">cancel</button></NavLink>
+              <NavLink to="/products"><button type="button" className="text-md capitalize w-[76px] h-[40px] bg-white shadow rounded">cancel</button></NavLink>
               <button type="submit" className="text-md capitalize w-[76px] h-[40px] bg-blue-700 rounded text-white">create</button>
             </div>
           </div>

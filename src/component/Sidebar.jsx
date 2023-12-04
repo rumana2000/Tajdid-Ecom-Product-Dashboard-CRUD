@@ -8,27 +8,38 @@ import logOut from "../assets/Image/logOut.png"
 import dollarSign from "../assets/Image/dollarSign.png"
 import arrowDown from "../assets/Image/arrowDown.png"
 import vector from "../assets/Image/Vector.png"
+import { NavLink, useLocation } from "react-router-dom"
 
 export default function Sidebar() {
+  const location = useLocation();
+
+  const isMenuItemActive = (menuItemPaths) => {
+    return menuItemPaths.includes(location.pathname)
+  };
+
   return (
     <>
       <div className="col-span-1 items-start">
-        <div className="min-h-screen shadow bg-white">
+        <div className="min-h-full shadow bg-white">
           <div className="">
+            <NavLink to='/' >
             <div className="flex justify-center items-center p-10 gap-1">
               <img src={shopLogo} alt="shopLogo" className="w-5 h-5" />
               <img src={shopName} alt="shopName" className="w-20h-20" />
             </div>
+            </NavLink>
             <div className="menu-h-container">
               <ul className="space-y-2 font-medium">
-                <li className="bg-sky-100 border-l-4 border-blue-600 ">
+                <NavLink to='/products'>
+                <li className={isMenuItemActive(['/products', '/product/create']) ? 'menu-active-link' : ''}>
                   <div className="px-6">
-                    <a href="#" className="flex items-center p-2 text-gray-900  dark:text-white">
+                    <span className="flex items-center p-2 text-gray-900  dark:text-white">
                       <img src={Layers} alt="Layers" className="w-4 h-4" />
                       <span className="ms-3 capitalize">product</span>
-                    </a>
+                    </span>
                   </div>
                 </li>
+                </NavLink>
                 <li>
                   <div className="px-6">
                     <a href="#" className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white">
