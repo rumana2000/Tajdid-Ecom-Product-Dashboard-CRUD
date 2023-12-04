@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import React from "react";
 import Layout from "./component/Layout"
 import Product from "./page/Product";
+import Home from "./page/Home";
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
     <>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<Product />} />
-          <Route path="/create-product" element={<CreateProduct />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Product />} />
+          <Route path="/product/create" element={<CreateProduct />} />
         </Route>
       </Routes>
     </>
