@@ -5,14 +5,14 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import ShimmerEffect from "../component/ShimmerEffect"
 import DeleteConfirmPopup from "../component/DeleteConfirmPopUp"
-import {toast} from "react-toastify"
+import { toast } from "react-toastify"
 
 
 export default function Product() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
-  const [deleteProductId, setDeleteProductId] =useState(null)
+  const [deleteProductId, setDeleteProductId] = useState(null)
 
   const handleDeleteClick = (id) => {
     setDeleteProductId(id)
@@ -34,16 +34,16 @@ export default function Product() {
   };
 
   let fetchAllProducts = async () => {
-      setLoading(true)
-      let res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/products`)
-      setProducts(res.data)
-      setLoading(false)
+    setLoading(true)
+    let res = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/products`)
+    setProducts(res.data)
+    setLoading(false)
   }
 
   let deleteProduct = async (productId) => {
     let res = await axios.delete(`${import.meta.env.VITE_API_BASE_URL}/products/${productId}`)
     return res.status == 200
-  } 
+  }
 
   useEffect(() => {
     fetchAllProducts();
@@ -54,15 +54,15 @@ export default function Product() {
         <div className="p-10">
           <ProductHeader />
           {loading && <ShimmerEffect />}
-          <div className="grid grid-cols-3 items-center gap-6">
+          <div className="grid grid-cols-3 mb-5 items-center gap-6">
             {products && products.map((product) => <SingleProduct deleteProductHandler={handleDeleteClick} key={product.id} productInfo={product} />)}
           </div>
-          <div className="flex items-center justify-center border-t mt-5 bg-white py-8 lg:px-0 sm:px-6 px-4">
+          <div className="flex justify-center border-t-2 bg-white lg:px-0 sm:px-6 px-4">
             <Pagination />
           </div>
         </div>
       </div>
-    
+
       <DeleteConfirmPopup
         isOpen={isDeleteDialogOpen}
         onCancel={handleCancelDelete}

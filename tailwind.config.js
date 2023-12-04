@@ -24,6 +24,7 @@ export default {
         '76px': '76px',
         '512px': '512px',
         '400px': '400px',
+        '228px': '228px',
       },
       height: {
         '32px': '32px',
@@ -34,7 +35,8 @@ export default {
         '40px':  '40px',
         '44px': '44px',
         '154px':'154px',
-        '180px': '180px'
+        '180px': '180px',
+        '217px': '217px',
       },
       top: {
         '12px': '12px',

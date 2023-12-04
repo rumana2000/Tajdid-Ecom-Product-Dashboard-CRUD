@@ -17,8 +17,8 @@
   }
 }
 .menu-active-link {
-  @apply bg-sky-100 border-l-4 border-blue-600
+  @apply bg-sky-100 border-l-4 border-blue-600 overflow-x-hidden
 }
 .menu-h-container {
-  min-height: calc(80vh - 244px);
+  min-height: calc(100vh - 470px);
 }

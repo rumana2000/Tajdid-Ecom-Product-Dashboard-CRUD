@@ -5,7 +5,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import ValidationErrorMsg from "../component/ValidationErrorMsg";
 import axios from "axios"
-import {toast} from "react-toastify"
+import { toast } from "react-toastify"
 import { NavLink } from "react-router-dom";
 
 const schema = yup.object().shape({
@@ -28,7 +28,7 @@ export default function ProductCreateFrom() {
       toast.info("Prodcut has beed created successfully!")
     } else {
       toast.error('Opps! Something went wrong.')
-    } 
+    }
     reset()
   };
 
@@ -60,7 +60,7 @@ export default function ProductCreateFrom() {
               <label className="text-gray-800 text-xl capitalize">Price</label>
             </div>
             <div className="w-2/4">
-              <input type="number" {...register("price")} className={` w-full bg-white rounded-md shadow border p-3 focus:outline-none items-center focus:bg-white ${errors.title ? 'border border-red-500' : 'border-bg-white'}`}/>
+              <input type="number" {...register("price")} className={` w-full bg-white rounded-md shadow border p-3 focus:outline-none items-center focus:bg-white ${errors.title ? 'border border-red-500' : 'border-bg-white'}`} />
               {errors.price && <ValidationErrorMsg message={errors.price?.message} />}
             </div>
           </div>
@@ -69,9 +69,9 @@ export default function ProductCreateFrom() {
               <h2 className="text-gray-800 text-xl capitalize">Product photo</h2>
               <h3 className="text-gray-400 text-md capitalize">This will be displayed on your product</h3>
             </div>
-            <div className="w-2/4 bg-white rounded-lg">
+            <div className="w-2/4 ml-5 bg-white rounded-lg">
               <div className="flex gap-6">
-                <div className="w-1/3 max-h-full  border border-gray-200">
+                <div className="w-1/3 max-h-full border border-gray-200">
                   <img src={img} alt="img" className="w-full h-full items-center bg-white" />
                 </div>
                 <div className="w-2/3 max-h-full border border-gray-200 rounded-lg">

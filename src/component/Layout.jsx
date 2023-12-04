@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     <>
       <div className="container xxl:mx-auto">
         <div className="grid grid-cols-4 gap-6">
-          <div className="col-span-1 items-start">
+          <div className="col-span-1">
             <Sidebar />
           </div>
           <div className="col-span-3">

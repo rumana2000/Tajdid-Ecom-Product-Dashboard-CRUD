@@ -4,7 +4,7 @@ import arrowRight from "../assets/Image/arrowRight.png"
 export default function Pagination() {
   return (
     <>
-      <div className="lg:w-11/12 w-full flex items-center justify-between">
+      <div className="lg:w-full w-full p-3 flex items-center justify-between">
         <div className="flex items-center justify-center gap-2 text-gray-600  cursor-pointer">
           <img src={arrowLeft} alt="arrowLeft" className="w-4 h-4" />
           <p className="text-sm w-[60px] h-[20px] mt-2 font-medium leading-none ">Previous</p>
