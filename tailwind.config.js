@@ -50,7 +50,10 @@ export default {
         "base" : "#FF9017",
         "cardBase": "#606060",
         "opacitybg": "#344054",
-      }
+      },
+      screens: {
+        'xxl': {'min': '1920px'}
+      },
 
     },
   },

@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Layout({ children }) {
   return (
     <>
-      <div className="container">
+      <div className="container xxl:mx-auto">
         <div className="grid grid-cols-4 gap-6">
-          <Sidebar />
+          <div className="col-span-1 items-start">
+            <Sidebar />
+          </div>
           <div className="col-span-3">
             <Outlet>{children}</Outlet>
             <ToastContainer
