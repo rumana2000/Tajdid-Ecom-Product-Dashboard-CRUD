@@ -7,7 +7,6 @@ import ShimmerEffect from "../component/ShimmerEffect"
 import DeleteConfirmPopup from "../component/DeleteConfirmPopup"
 import { toast } from "react-toastify"
 
-
 export default function Product() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(false)
@@ -27,7 +26,7 @@ export default function Product() {
     let deleted = deleteProduct(deleteProductId)
     if (deleted) {
       fetchAllProducts()
-      toast.info('item(s) have been deleted !')
+      toast.success('Product Deleted Successfully')
     }
     setIsDeleteDialogOpen(false);
     setDeleteProductId(null)

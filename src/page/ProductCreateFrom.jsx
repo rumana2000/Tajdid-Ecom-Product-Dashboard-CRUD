@@ -25,7 +25,7 @@ export default function ProductCreateFrom() {
   const onSubmitHandler = async (data) => {
     let created = storeProduct(data)
     if (created) {
-      toast.info("Prodcut has beed created successfully!")
+      toast.success("Product Created Successfully! ")
     } else {
       toast.error('Opps! Something went wrong.')
     }
