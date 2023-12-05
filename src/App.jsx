@@ -6,7 +6,6 @@ import Product from "./page/Product";
 import Home from "./page/Home";
 
 function App() {
-
   return (
     <>
       <Routes>

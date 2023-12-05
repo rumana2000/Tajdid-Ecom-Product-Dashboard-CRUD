@@ -20,7 +20,6 @@ export default function SingleShimmerEffect() {
         </div>
         <button className="sr-only">Add to Cart...</button>
       </div>
-
     </>
   )
 }

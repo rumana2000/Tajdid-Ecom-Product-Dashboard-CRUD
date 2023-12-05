@@ -11,7 +11,7 @@ import { NavLink } from "react-router-dom";
 const schema = yup.object().shape({
   title: yup.string().required("Name is requrid"),
   price: yup.number().typeError('Amount must be a number').required('Price is required'),
-  description: yup.string().max(275).required("275 character left"),
+  description: yup.string().max(275, 'Max 275 character').required("Description is required!"),
 }).required();
 
 export default function ProductCreateFrom() {

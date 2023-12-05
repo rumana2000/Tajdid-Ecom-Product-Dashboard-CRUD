@@ -18,7 +18,7 @@ export default function SingleProduct({ productInfo, deleteProductHandler }) {
               <span className="font-bold text-gray-900 dark:text-white">$ {productInfo.price}</span>
               <Rating productInfo={productInfo} />
             </div>
-            <div onClick={() => {deleteProductHandler(productInfo.id)}}>
+            <div onClick={() => { deleteProductHandler(productInfo.id) }}>
               <button type="button" className="w-10 h-10 rounded-md shadow relative">
                 <img src={deleteImg} alt="deleteImg" className="absolute w-6 h-6 top-2 left-2" />
               </button>
