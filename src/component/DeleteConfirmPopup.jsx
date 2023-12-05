@@ -1,4 +1,4 @@
-export default function DeleteConfirmPopup({ isOpen, onCancel, onConfirm }) {
+export default function DeleteConfirmPopUp({ isOpen, onCancel, onConfirm }) {
   const overlayStyles = isOpen ? 'fixed inset-0 bg-opacitybg opacity-50' : 'hidden';
   const dialogStyles = isOpen ? 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 overflow-y-auto overflow-x-hidden w-[400px] rounded-lg' : 'hidden';
 

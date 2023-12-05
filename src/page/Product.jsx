@@ -4,7 +4,7 @@ import Pagination from "../component/Pagination"
 import { useEffect, useState } from "react"
 import axios from "axios"
 import ShimmerEffect from "../component/ShimmerEffect"
-import DeleteConfirmPopup from "../component/DeleteConfirmPopup"
+import DeleteConfirmPopUp from "../component/DeleteConfirmPopUp"
 import { toast } from "react-toastify"
 
 export default function Product() {
@@ -62,7 +62,7 @@ export default function Product() {
         </div>
       </div>
 
-      <DeleteConfirmPopup
+      <DeleteConfirmPopUp
         isOpen={isDeleteDialogOpen}
         onCancel={handleCancelDelete}
         onConfirm={handleConfirmDelete}
