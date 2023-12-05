@@ -71,8 +71,8 @@ export default function ProductCreateFrom() {
             </div>
             <div className="w-2/4 ml-5 bg-white rounded-lg">
               <div className="flex gap-6">
-                <div className="w-1/3 max-h-full border border-gray-200">
-                  <img src={img} alt="img" className="w-full h-full items-center bg-white" />
+                <div className="w-1/3 max-h-full border border-gray-200 rounded-lg">
+                  <img src={img} alt="img" className="w-full h-full items-center rounded-lg bg-white" />
                 </div>
                 <div className="w-2/3 max-h-full border border-gray-200 rounded-lg">
                   <div class="flex items-center justify-center w-full">
