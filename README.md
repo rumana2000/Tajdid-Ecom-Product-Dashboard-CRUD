@@ -1,8 +1,34 @@
-# React + Vite
+# Tajdid-Ecom-Product-Dashboard-CRUD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple E-commarce product dashboard with basic functionalities.
 
-Currently, two official plugins are available:
+## How to run
+#### Clone the Repository:
+```
+git clone https://github.com/rumana2000/Tajdid-Ecom-Product-Dashboard-CRUD.git
+```
+#### Copy Environment Variables:
+Navigate to the project dir and Copy the .env.example file and create a new .env file.
+```
+cp .env.example .env
+```
+#### Install Dependencies
+```
+npm install
+```
+#### Run the project on dev env
+```
+npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tech stack
+- React
+- React Router
+- Tailwind CSS
+- React Hook Form
+- Form validation using Yup
+
+
+## Data Source
+- https://fakestoreapi.com
